@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\bin\Release\net8.0\Unit2_AsyncBasics.exe
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\bin\Release\net8.0\Unit2_AsyncBasics.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\bin\Release\net8.0\Unit2_AsyncBasics.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\bin\Release\net8.0\Unit2_AsyncBasics.dll
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\bin\Release\net8.0\Unit2_AsyncBasics.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.dll
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\refint\Unit2_AsyncBasics.dll
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\Unit2_AsyncBasics.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\Unit2_AsyncBasics\obj\Release\net8.0\ref\Unit2_AsyncBasics.dll

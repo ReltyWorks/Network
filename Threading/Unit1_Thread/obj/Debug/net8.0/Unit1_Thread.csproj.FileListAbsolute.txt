@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\bin\Debug\net8.0\Unit1_Thread.exe
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\bin\Debug\net8.0\Unit1_Thread.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\bin\Debug\net8.0\Unit1_Thread.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\bin\Debug\net8.0\Unit1_Thread.dll
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\bin\Debug\net8.0\Unit1_Thread.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.dll
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\refint\Unit1_Thread.dll
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\Unit1_Thread.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\Unit1_Thread\obj\Debug\net8.0\ref\Unit1_Thread.dll

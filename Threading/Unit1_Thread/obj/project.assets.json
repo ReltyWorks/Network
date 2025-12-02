@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_Thread\\Unit1_Thread.csproj",
-      "projectName": "Unit1_Thread",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_Thread\\Unit1_Thread.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_Thread\\Unit1_HelloThread.csproj",
+      "projectName": "Unit1_HelloThread",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_Thread\\Unit1_HelloThread.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_Thread\\obj\\",
       "projectStyle": "PackageReference",
