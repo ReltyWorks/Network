@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit2_AsyncBasics\\Unit2_AsyncBasics.csproj",
-      "projectName": "Unit2_AsyncBasics",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit2_AsyncBasics\\Unit2_AsyncBasics.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit2_AsyncBasics\\1_AsyncBasic.csproj",
+      "projectName": "1_AsyncBasic",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit2_AsyncBasics\\1_AsyncBasic.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit2_AsyncBasics\\obj\\",
       "projectStyle": "PackageReference",

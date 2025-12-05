@@ -11,17 +11,20 @@ namespace Unit1_ThreadPool
             BenchmarkRunner.Run<Benchmarks>();
             return;
 
+
             // workerThreads : CPU-Bound thread 개수
             // completionPortThreads : I/O-Bound thread 개수
             ThreadPool.SetMinThreads(4, 4);
             ThreadPool.SetMaxThreads(4, 8);
 
-            // ThreadPool 의 이용가능한 스레드가 확보될때
+            // Threadpool 의 이용가능한 스레드가 확보될때 
             // 해당 쓰레드에 작업을 할당할 대기열에 작업을 등록
             ThreadPool.QueueUserWorkItem(_ =>
             {
 
             });
+
+
         }
 
         static void Measure(string label, Action action)
@@ -29,11 +32,11 @@ namespace Unit1_ThreadPool
             GC.Collect();
             GC.WaitForPendingFinalizers();
 
-            Stopwatch sw = Stopwatch.StartNew();
+            Stopwatch stopwatch = Stopwatch.StartNew();
             action.Invoke();
-            sw.Stop();
+            stopwatch.Stop();
 
-            Console.WriteLine($"{label} : {sw.ElapsedMilliseconds}");
+            Console.WriteLine($"{label} : {stopwatch.ElapsedMilliseconds}");
         }
     }
 

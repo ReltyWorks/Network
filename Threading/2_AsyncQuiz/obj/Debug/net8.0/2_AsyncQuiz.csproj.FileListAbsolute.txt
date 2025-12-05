@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\bin\Debug\net8.0\2_AsyncQuiz.exe
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\bin\Debug\net8.0\2_AsyncQuiz.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\bin\Debug\net8.0\2_AsyncQuiz.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\bin\Debug\net8.0\2_AsyncQuiz.dll
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\bin\Debug\net8.0\2_AsyncQuiz.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.dll
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\refint\2_AsyncQuiz.dll
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\2_AsyncQuiz.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\2_AsyncQuiz\obj\Debug\net8.0\ref\2_AsyncQuiz.dll

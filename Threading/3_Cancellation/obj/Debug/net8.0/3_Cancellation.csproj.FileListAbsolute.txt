@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\bin\Debug\net8.0\3_Cancellation.exe
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\bin\Debug\net8.0\3_Cancellation.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\bin\Debug\net8.0\3_Cancellation.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\bin\Debug\net8.0\3_Cancellation.dll
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\bin\Debug\net8.0\3_Cancellation.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.dll
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\refint\3_Cancellation.dll
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\3_Cancellation.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\3_Cancellation\obj\Debug\net8.0\ref\3_Cancellation.dll

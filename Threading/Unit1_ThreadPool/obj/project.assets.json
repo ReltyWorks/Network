@@ -2367,9 +2367,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_ThreadPool\\Unit1_ThreadPool.csproj",
-      "projectName": "Unit1_ThreadPool",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_ThreadPool\\Unit1_ThreadPool.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_ThreadPool\\2_ThreadPool.csproj",
+      "projectName": "2_ThreadPool",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_ThreadPool\\2_ThreadPool.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\Threading\\Unit1_ThreadPool\\obj\\",
       "projectStyle": "PackageReference",

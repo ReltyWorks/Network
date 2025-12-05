@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\bin\Debug\net8.0\1_Lock.exe
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\bin\Debug\net8.0\1_Lock.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\bin\Debug\net8.0\1_Lock.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\bin\Debug\net8.0\1_Lock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\bin\Debug\net8.0\1_Lock.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\refint\1_Lock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\1_Lock.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\1_Lock\obj\Debug\net8.0\ref\1_Lock.dll

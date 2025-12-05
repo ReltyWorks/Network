@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\bin\Debug\net8.0\3_MonitorSignal.exe
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\bin\Debug\net8.0\3_MonitorSignal.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\bin\Debug\net8.0\3_MonitorSignal.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\bin\Debug\net8.0\3_MonitorSignal.dll
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\bin\Debug\net8.0\3_MonitorSignal.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.dll
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\refint\3_MonitorSignal.dll
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\3_MonitorSignal.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\3_MonitorSignal\obj\Debug\net8.0\ref\3_MonitorSignal.dll

@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\bin\Debug\net8.0\2_Deadlock.exe
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\bin\Debug\net8.0\2_Deadlock.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\bin\Debug\net8.0\2_Deadlock.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\bin\Debug\net8.0\2_Deadlock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\bin\Debug\net8.0\2_Deadlock.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\refint\2_Deadlock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\2_Deadlock.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\2_Deadlock\obj\Debug\net8.0\ref\2_Deadlock.dll

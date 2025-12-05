@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\bin\Debug\net8.0\4_ChannelPipeline.exe
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\bin\Debug\net8.0\4_ChannelPipeline.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\bin\Debug\net8.0\4_ChannelPipeline.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\bin\Debug\net8.0\4_ChannelPipeline.dll
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\bin\Debug\net8.0\4_ChannelPipeline.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.dll
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\refint\4_ChannelPipeline.dll
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\4_ChannelPipeline.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\4_ChannelPipeline\obj\Debug\net8.0\ref\4_ChannelPipeline.dll

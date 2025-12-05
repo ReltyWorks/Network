@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\bin\Debug\net8.0\4_Interlock.exe
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\bin\Debug\net8.0\4_Interlock.deps.json
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\bin\Debug\net8.0\4_Interlock.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\bin\Debug\net8.0\4_Interlock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\bin\Debug\net8.0\4_Interlock.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.sourcelink.json
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\refint\4_Interlock.dll
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.pdb
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\4_Interlock.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Network\Threading\4_Interlock\obj\Debug\net8.0\ref\4_Interlock.dll
