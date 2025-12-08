@@ -1,6 +1,10 @@
-﻿using System.Net.Sockets;
+﻿using System;
+using System.Net.Sockets;
+using System.Threading.Tasks;
+using System.Collections.Concurrent;
 
-namespace ChatServer
+
+namespace Core.Net
 {
     /// <summary> Tcp 통신 소켓의 생명주기 및 소켓을 통한 데이터 송수신 처리 </summary>
     public abstract class TcpSession : IDisposable
@@ -9,7 +13,7 @@ namespace ChatServer
         {
             Socket = socket;
             _recvBuffer = new byte[recvBufferSize];
-            _sendQueue = new Queue<ArraySegment<byte>>();
+            _sendQueue = new ConcurrentQueue<ArraySegment<byte>>(); // TODO : Reserving
         }
 
         const int KB = 1_024;
@@ -22,7 +26,9 @@ namespace ChatServer
         protected Socket Socket;
 
         // Send
-        Queue<ArraySegment<byte>> _sendQueue;
+        ConcurrentQueue<ArraySegment<byte>> _sendQueue;
+        SocketAsyncEventArgs _sendArgs;
+        readonly object _sendGate = new object();
 
         // Receive
         byte[] _recvBuffer;
@@ -35,49 +41,79 @@ namespace ChatServer
         public void Start()
         {
             OnConnected?.Invoke();
-            RecvLoop();
-            OnDisconnected?.Invoke();
-            CloseSocket();
+            _ = RecvLoopAsync();
+            _sendArgs = new SocketAsyncEventArgs();
         }
 
         public void Send(byte[] body)
         {
             int total = HEADER_SIZE + body.Length;
             byte[] segment = new byte[total];
-            Buffer.BlockCopy(BitConverter.GetBytes((ushort)body.Length), 0, segment, 0, HEADER_SIZE);
+            Buffer.BlockCopy(BitConverter.GetBytes((ushort)body.Length), 0,
+                             segment, 0, HEADER_SIZE);
             Buffer.BlockCopy(body, 0, segment, HEADER_SIZE, body.Length);
             _sendQueue.Enqueue(new ArraySegment<byte>(segment, 0, segment.Length));
             Send();
         }
 
-        void Send()
+        private void Send()
         {
-            if (_sendQueue.TryDequeue(out var segment) == false)
-                return;
-
-            int sent = 0; // 실제 전송된 길이
-
-            // Socket.Send 요청에 넣은 버퍼데이터가 반드시 전송 보장이 되는것이 아니기 때문에,
-            // OS가 실제로 얼마만큼 보냈는지 추적하면서 완전히 전송을 보장해주는 구문을 써야한다.
-            while (sent < segment.Count)
+            lock (_sendGate)
             {
-                sent += Socket.Send(segment);
-                segment = new ArraySegment<byte>(segment.Array, segment.Offset + sent,
-                                                 segment.Count - sent);
+                if (_sendQueue.TryDequeue(out var segment) == false) return;
+                _ = SendAsync(segment);
             }
         }
 
-        void RecvLoop()
+        private async Task SendAsync(ArraySegment<byte> segment)
         {
-            while(IsConnected)
+            int sentTotal = 0; // 실제 전송된 길이
+            
+
+            // Socket.Send 요청에 넣은 버퍼데이터가 반드시 전송 보장이 되는것이
+            // 아니기 때문에, OS가 실제로 얼마만큼 보냈는지 추적하면서 완전히 전송을 
+            // 보장해주는 구문을 써야한다.
+            while (sentTotal < segment.Count)
             {
-                ArraySegment<byte> remainBufferSegment = new ArraySegment<byte>
-                    (_recvBuffer, _recvBufferCount, _recvBuffer.Length - _recvBufferCount);
+                var tcs = new TaskCompletionSource<int>();
+                _sendArgs.SetBuffer(segment.Array, sentTotal, segment.Count - sentTotal);
+                _sendArgs.UserToken = tcs;
+                bool pending = Socket.SendAsync(_sendArgs);
 
-                int read = Socket.Receive(remainBufferSegment);
+                if (pending == false)
+                {
+                    // 송신완료 이벤트
+                }
 
-                // 연결이 끊어짐
-                if (read <= 0) break;
+                int sent = await tcs.Task;
+
+                if (sent <= 0)
+                {
+                    CloseSocket();
+                    return;
+                }
+
+                segment = new ArraySegment<byte>(segment.Array,
+                                                 segment.Offset + sent,
+                                                 segment.Count - sent);
+                sentTotal += sent;
+            }
+            Send();
+        }
+
+        async Task RecvLoopAsync()
+        {
+            while (IsConnected)
+            {
+                ArraySegment<byte> remainBufferSegment = new ArraySegment<byte>(_recvBuffer, _recvBufferCount, _recvBuffer.Length - _recvBufferCount);
+
+                int read = await Socket.ReceiveAsync(remainBufferSegment);
+
+                // 연결에 문제있음
+                if (read <= 0)
+                {
+                    break;
+                }
 
                 _recvBufferCount += read;
                 ParsePacket();

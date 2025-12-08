@@ -1,0 +1,6 @@
+C:\Users\user\Documents\GitHub\Network\Game\Core\obj\Release\netcoreapp2.1\Core.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\Network\Game\Core\obj\Release\netcoreapp2.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Network\Game\Core\obj\Release\netcoreapp2.1\Core.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Network\Game\Core\obj\Release\netcoreapp2.1\Core.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Network\Game\Core\obj\Release\netcoreapp2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Network\Game\Core\obj\Release\netcoreapp2.1\Core.sourcelink.json

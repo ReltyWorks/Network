@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3_MonitorSignal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e288d4e1170d0eaa46190d1f13c46ac898d57333")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30d083bc5ad44035a36900d8f25c182382786971")]
 [assembly: System.Reflection.AssemblyProductAttribute("3_MonitorSignal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3_MonitorSignal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
