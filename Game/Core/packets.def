@@ -1,0 +1,11 @@
+﻿##################################################################################
+# PacketId	Name					Fields
+##################################################################################
+
+# Connection 0x000n
+0x0001		S_ConnectionSuccess		int AssignedClientId
+0x0002		S_ConnectionFailure		string Reason
+
+# Chat	0x10nn
+0x1010		S_ChatSend				int SenderId, string Text
+0x1020		C_ChatSend				string Text
