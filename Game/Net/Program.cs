@@ -21,7 +21,7 @@ namespace Game.Net
             listener.Start();
             ClientIdGenerator idGenerator = new ClientIdGenerator();
             TcpServerSessionHub hub = new TcpServerSessionHub(100);
-            ChatService chatService = new ChatService(hub);
+            ChatServiceImpl chatService = new ChatServiceImpl(hub);
 
             hub.OnPacketReceived += (senderId, packet) => Console.WriteLine($"클라이언트 {senderId} 에게서 패킷 {packet.PacketId} 받음 ");
 
