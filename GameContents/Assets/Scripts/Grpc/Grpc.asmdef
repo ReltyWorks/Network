@@ -1,0 +1,16 @@
+{
+    "name": "Grpc",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c3bc0afe4a069b54aa23296f3c18a871"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
