@@ -1,7 +1,7 @@
 
 using Auth.Repositories;
 
-namespace Auth
+namespace Persistence
 {
     public class Program
     {
@@ -14,7 +14,7 @@ namespace Auth
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen(); // 테스트를 위한 프론트
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 

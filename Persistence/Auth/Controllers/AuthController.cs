@@ -1,15 +1,7 @@
-﻿using Auth.Repositories;
+﻿using Auth.Jwt;
 using Auth.Entities;
+using Auth.Repositories;
 using Microsoft.AspNetCore.Mvc;
-
-/*
- * HTTP 메서드
- * Get : 조회
- * Post : 생성
- * Put : 전체 수정
- * Patch : 부분 수정
- * Delete : 삭제
-*/
 
 namespace Auth.Controllers
 {
@@ -17,18 +9,18 @@ namespace Auth.Controllers
     [Route("auth")]
     public class AuthController : Controller
     {
-        IUserRepository _userRepository;
-        Dictionary<Guid, User> _loginSessions = new();
-
         public AuthController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
 
+        IUserRepository _userRepository;
+        Dictionary<Guid, User> _loginSessions = new(); // <sessionId, user>
+
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginDTO dto)
         {
-            User user = _userRepository.GetByUserName(dto.id);
+            var user = _userRepository.GetByUserName(dto.id);
 
             if (user == null)
                 return Unauthorized();
@@ -36,10 +28,13 @@ namespace Auth.Controllers
             if (user.Password.Equals(dto.pw) == false)
                 return Unauthorized();
 
-            _loginSessions.Add(user.Id, user);
-            return Ok(); // 여기서 클라이언트에게 토큰같은 보내고 싶은걸 보낼 수 있다.
+            Guid sessionId = Guid.NewGuid();
+            _loginSessions.Add(sessionId, user);
+            var jwt = JwtUtils.Generate(user.Id.ToString(), sessionId.ToString(), TimeSpan.FromHours(1));
+            return Ok(new { jwt });
         }
 
+        [HttpPost("logout")]
         public IActionResult Logout([FromBody] LogoutDTO dto)
         {
             var user = _userRepository.GetByUserName(dto.id);
@@ -47,13 +42,12 @@ namespace Auth.Controllers
             if (user == null)
                 return Unauthorized();
 
-            if (user.Password.Equals(dto.id) == false)
+            if (_loginSessions.ContainsKey(user.Id) == false)
                 return Unauthorized();
 
             _loginSessions.Remove(user.Id);
             return Ok();
         }
-
 
     }
 

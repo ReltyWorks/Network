@@ -20,6 +20,8 @@ using System.Threading.Tasks;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Threading;
+using UnityEngine.Networking;
+using UnityEditor.PackageManager.Requests;
 
 namespace Game.Net.Chat
 {

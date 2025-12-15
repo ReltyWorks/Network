@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Auth")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+882586c40b96123a8e21a675481e611ef171f6f5")]
-[assembly: System.Reflection.AssemblyProductAttribute("Auth")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Auth")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2efddc984aeeaac71aa6b70bb8d726b0c802ec44")]
+[assembly: System.Reflection.AssemblyProductAttribute("Persistence")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.
