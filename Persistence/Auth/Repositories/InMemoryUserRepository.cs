@@ -1,4 +1,5 @@
-﻿using Auth.Entities;
+﻿/*
+using Auth.Entities;
 
 namespace Auth.Repositories
 {
@@ -51,3 +52,4 @@ namespace Auth.Repositories
         }
     }
 }
+*/

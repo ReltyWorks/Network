@@ -2,6 +2,7 @@
 using Auth.Entities;
 using Auth.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Auth.Controllers
 {
@@ -18,9 +19,9 @@ namespace Auth.Controllers
         Dictionary<Guid, User> _loginSessions = new(); // <sessionId, user>
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginDTO dto)
+        public async Task<IActionResult> Login([FromBody] LoginDTO dto)
         {
-            var user = _userRepository.GetByUserName(dto.id);
+            var user = await _userRepository.GetByUserNameAsync(dto.id);
 
             if (user == null)
                 return Unauthorized();
@@ -31,13 +32,13 @@ namespace Auth.Controllers
             Guid sessionId = Guid.NewGuid();
             _loginSessions.Add(sessionId, user);
             var jwt = JwtUtils.Generate(user.Id.ToString(), sessionId.ToString(), TimeSpan.FromHours(1));
-            return Ok(new { jwt });
+            return Ok(new { jwt, user.Id, user.Nickname });
         }
 
         [HttpPost("logout")]
-        public IActionResult Logout([FromBody] LogoutDTO dto)
+        public async Task<IActionResult> Logout([FromBody] LogoutDTO dto)
         {
-            var user = _userRepository.GetByUserName(dto.id);
+            var user = await _userRepository.GetByUserNameAsync(dto.id);
 
             if (user == null)
                 return Unauthorized();
@@ -48,7 +49,6 @@ namespace Auth.Controllers
             _loginSessions.Remove(user.Id);
             return Ok();
         }
-
     }
 
     public record LoginDTO(string id, string pw);

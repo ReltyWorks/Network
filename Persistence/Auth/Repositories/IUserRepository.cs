@@ -4,12 +4,12 @@ namespace Auth.Repositories
 {
     public interface IUserRepository
     {
-        IEnumerable<User> GetAll();
-        User GetById(Guid id);
-        User GetByUserName(string username);
-        void Insert(User user);
-        void Update(User user);
-        void Delete(Guid id);
-        void Save();
+        Task<IEnumerable<User>> GetAllAsync(CancellationToken ct = default);
+        Task<User> GetByIdAsync(Guid id, CancellationToken ct = default);
+        Task<User> GetByUserNameAsync(string username, CancellationToken ct = default);
+        Task InsertAsync(User user, CancellationToken ct = default);
+        Task UpdateAsync(User user, CancellationToken ct = default);
+        Task DeleteAsync(Guid id, CancellationToken ct = default);
+        Task SaveAsync(CancellationToken ct = default);
     }
 }

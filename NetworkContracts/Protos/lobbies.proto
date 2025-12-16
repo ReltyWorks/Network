@@ -1,0 +1,128 @@
+syntax = "proto3";
+
+package game.lobbies;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+
+service LobbiesService
+{
+	// 로비 생성
+	rpc CreateLobby (CreateLobbyRequest) returns (CreateLobbyResponse);
+	// 로비 참가
+	rpc JoinLobby (JoinLobbyRequest) returns (JoinLobbyResponse);
+	// 로비 나가기
+	rpc LeaveLobby (LeaveLobbyRequest) returns (LeaveLobbyResponse);
+	// 로비 목록 읽기
+	rpc GetLobbyList (google.protobuf.Empty) returns (GetLobbyListResponse);
+	// 로비 구독
+	rpc SubscribeLobby (SubscribeLobbyRequest) returns (stream LobbyEvent);
+	// 로비 커스텀 프로퍼티 설정
+	rpc SetCustomProperties(SetCustomPropertiesRequest) returns (SetCustomPropertiesResponse);
+	// 유저 in 로비 커스텀 프로퍼티 설정
+	rpc SetUserCustomProperties(SetUserCustomPropertiesRequest) returns (SetUserCustomPropertiesResponse);
+}
+
+message CreateLobbyRequest
+{
+	string user_id = 1; // Guid
+	int32 max_client = 2; // 최대 인원
+}
+
+message CreateLobbyResponse
+{
+	bool success = 1;
+	LobbyInfo lobby_info = 2;
+	UserInLobbyInfo user_in_lobby_info = 3;
+}
+
+message JoinLobbyRequest
+{
+	string user_id = 1; // Client Guid
+	int32 lobby_id = 2; // 들어가고싶은 로비 번호
+}
+
+message JoinLobbyResponse
+{
+	bool success = 1;
+	LobbyInfo lobby_info = 2; // 참여 성공한 로비정보
+	repeated UserInLobbyInfo user_in_lobby_infos = 3; // 참여한 로비의 유저정보
+}
+
+message LeaveLobbyRequest
+{
+	string user_id = 1;
+	int32 lobby_id = 2;
+}
+
+message LeaveLobbyResponse
+{
+	bool success = 1;
+}
+
+message GetLobbyListResponse
+{
+	repeated LobbyInfo lobby_infos = 1;
+}
+
+message SubscribeLobbyRequest
+{
+	string user_id = 1;
+	int32 lobby_id = 2;
+}
+
+message LobbyEvent
+{
+	enum EventType
+	{
+		MEMBER_JOIN = 0; // 다른 클라이언트가 합류
+		MEMBER_LEFT = 1; // 다른 클라이언트가 나감
+		LOBBY_CUSTOM_PROP_CHANGED = 2; // 현재 로비의 사용자지정 설정이 바뀜
+		USER_CUSTOM_PROP_CHANGED = 3; // 현재 로비의 어떤 클라이언트의 사용자지정 설정이 바뀜
+	}
+
+	EventType type = 1;
+	int32 lobby_id = 2; // 이벤트가 발생한 로비
+	int32 user_id = 3; // 이벤트가 발생한 유저
+	map<string, string> kv = 4; // 변경된 사용자지정 설정
+	google.protobuf.Timestamp ts = 5; // 이벤트가 발생한 시간
+}
+
+message SetCustomPropertiesRequest
+{
+	int32 lobby_id = 1; // 어떤 로비에
+	map<string, string> kv = 2; // 어떤 사용자지정 설정을 할 것인지
+}
+
+message SetCustomPropertiesResponse
+{
+	bool success = 1;
+}
+
+message SetUserCustomPropertiesRequest
+{
+	int32 lobby_id = 1; // 어떤 로비에
+	string user_id = 2; // 어떤 유저의
+	map<string, string> kv = 3; // 어떤 사용자지정 설정을 할 것인지
+}
+
+message SetUserCustomPropertiesResponse
+{
+	bool success = 1;
+}
+
+message LobbyInfo
+{
+	int32 lobby_id = 1;
+	int32 master_client_id = 2; // 방장 client id
+	int32 max_client = 3; // 최대 인원수
+	int32 num_client = 4; // 현재 인원수
+	map<string, string> custom_properties = 5;
+}
+
+message UserInLobbyInfo
+{
+	int32 client_id = 1;
+	map<string, string> custom_properties = 2;
+
+}

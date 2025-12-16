@@ -16,6 +16,7 @@ namespace Game.Net.Auth
 
         const string BASE_URL = "http://localhost:5083";
         string _jwt;
+        Guid _guid;
 
         [SerializeField] AuthView _view;
 
@@ -55,6 +56,7 @@ namespace Game.Net.Auth
                     {
                         var response = JsonUtility.FromJson<LoginResponse>(request.downloadHandler.text);
                         _jwt = response.Jwt;
+                        _guid = response.Guid;
                         success = true;
                         _view.ShowAlertPanel("Logged In !");
                     }
@@ -93,6 +95,47 @@ namespace Game.Net.Auth
         public class LoginResponse
         {
             public string Jwt;
+            public Guid Guid;
+            public string Nickname;
+        }
+
+        [Serializable]
+        public class DeleteRequest
+        {
+            public Guid Guid;
+            public string Id;
+            public string Pw;
+        }
+
+        // JWT 사용예시 (User API 등 에서 DeleteUser 와같이 소유자 권한이 필요한 요청에 사용)
+        IEnumerator C_DeleteUser(Guid guid, string id, string pw)
+        {
+            var deleteDto = new DeleteRequest { Guid = guid, Id = id, Pw = pw };
+            string json = JsonUtility.ToJson(deleteDto);
+            bool success = false;
+
+            using (UnityWebRequest request = new UnityWebRequest($"{BASE_URL}/user/delete{guid}", "DELETE"))
+            {
+                request.SetRequestHeader("Authorization", $"Bearer {_jwt}"); // 요거 한줄 추가해야함 
+                byte[] body = Encoding.UTF8.GetBytes(json);
+                request.uploadHandler = new UploadHandlerRaw(body);
+                request.downloadHandler = new DownloadHandlerBuffer();
+                request.SetRequestHeader("Content-Type", "application/json");
+                yield return request.SendWebRequest();
+
+                if (request.result == UnityWebRequest.Result.Success)
+                {
+                    try
+                    {
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                }
+                else
+                {
+                }
+            }
         }
     }
 }

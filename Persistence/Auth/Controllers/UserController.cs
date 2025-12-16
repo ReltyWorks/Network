@@ -1,6 +1,7 @@
 ﻿using Auth.Entities;
 using Auth.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Auth.Controllers
 {
@@ -16,18 +17,20 @@ namespace Auth.Controllers
         private readonly IUserRepository _userRepository;
 
         [HttpGet("getall")]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
             try
             {
-                IEnumerable<UserResponseDTO> response = _userRepository.GetAll()
-                                                                   .Select(user => new UserResponseDTO
-                                                                   (
-                                                                       id: user.Id,
-                                                                       username: user.Username,
-                                                                       nickname: user.Nickname,
-                                                                       lastConnected: user.LastConnected
-                                                                   ));
+                var users = await _userRepository.GetAllAsync();
+                var response = users.Select(user
+                    => new UserResponseDTO(
+                            id: user.Id,
+                            username: user.Username,
+                            nickname: user.Nickname,
+                            lastConnected: user.LastConnected
+                            )
+                    );
+
                 return Ok(response);
             }
             catch (Exception ex)
@@ -36,8 +39,33 @@ namespace Auth.Controllers
             }
         }
 
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> GetUser(Guid id)
+        {
+            try
+            {
+                var user = await _userRepository.GetByIdAsync(id);
+
+                if (user == null)
+                    return NotFound(new { error = "Not found user." });
+
+                var userDto = new UserResponseDTO(
+                    id: user.Id,
+                    username: user.Username,
+                    nickname: user.Nickname,
+                    lastConnected: user.LastConnected
+                    );
+
+                return Ok(userDto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "Server error", details = ex.Message });
+            }
+        }
+
         [HttpPost("create")]
-        public IActionResult CreateUser([FromBody] CreateUserDTO dto)
+        public async Task<IActionResult> CreateUser([FromBody] CreateUserDTO dto)
         {
             if (string.IsNullOrEmpty(dto.username))
                 return BadRequest(new { error = "Username is necessary." });
@@ -57,7 +85,7 @@ namespace Auth.Controllers
 
             try
             {
-                var users = _userRepository.GetAll();
+                var users = await _userRepository.GetAllAsync();
                 bool exist = users.Any(user => user.Username.Equals(dto.username)); // DB 에 이미 id 등록된거있는지
 
                 if (exist)
@@ -66,8 +94,8 @@ namespace Auth.Controllers
                 }
                 else
                 {
-                    _userRepository.Insert(user);
-                    _userRepository.Save();
+                    await _userRepository.InsertAsync(user);
+                    await _userRepository.SaveAsync();
 
                     var response = new UserResponseDTO(
                             id: user.Id,
@@ -76,7 +104,7 @@ namespace Auth.Controllers
                             lastConnected: user.LastConnected
                         );
 
-                    return CreatedAtAction("Create", response);
+                    return Created(string.Empty, response);
                 }
             }
             catch (Exception ex)
@@ -86,39 +114,67 @@ namespace Auth.Controllers
         }
 
         [HttpPatch("{id:guid}/nickname")]
-        public IActionResult UpdateNickname(Guid id, [FromBody] UpdateNicknameDTO dto)
+        public async Task<IActionResult> UpdateNickname(Guid id, [FromBody] UpdateNicknameDTO dto)
         {
-            var user = _userRepository.GetById(id);
+            // 유저 존재유무
+            var user = await _userRepository.GetByIdAsync(id);
 
             if (user == null)
                 return NotFound(new { error = "User not found" });
 
             try
             {
-                var users = _userRepository.GetAll();
-                var exist = users.Any(user => user.Nickname.Equals(dto.nickname, StringComparison.OrdinalIgnoreCase));
+                // 닉네임 중복검사
+                var users = await _userRepository.GetAllAsync();
+                var exist = users.Any(user => user.Nickname?.Equals(dto.nickname, StringComparison.OrdinalIgnoreCase) ?? false);
 
                 if (exist)
                 {
-                    return Conflict(new { isExist = exist, message = "Nickname already exist. " });
+                    return Conflict(new { isExist = exist, message = "Nickname already exist." });
                 }
                 else
                 {
                     user.Nickname = dto.nickname;
-                    _userRepository.Update(user);
+                    await _userRepository.UpdateAsync(user);
+                    await _userRepository.SaveAsync();
                     return Ok(new { isExist = exist, message = "Updated nickname.", newNickname = user.Nickname });
-
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "Server error", details = ex.Message });
+            }
+        }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> DeleteUser(Guid id, [FromBody] DeleteUserDTO dto)
+        {
+            try
+            {
+                var user = await _userRepository.GetByIdAsync(id);
+
+                if (user == null)
+                    return NotFound(new { error = "Not found user." });
+
+                if (user.Username.Equals(dto.username) == false)
+                    return Unauthorized();
+
+                if (user.Password.Equals(dto.password) == false)
+                    return Unauthorized();
+
+                await _userRepository.DeleteAsync(id);
+                await _userRepository.SaveAsync();
+                return Ok(new { message = "Deleted user." });
+            }
+            catch (Exception ex)
             {
                 return StatusCode(500, new { error = "Server error", details = ex.Message });
             }
         }
     }
 
-    public record UserResponseDTO(Guid id, string username, string nickname, DateTime lastConnected);
+    public record UserResponseDTO(Guid id, string username, string? nickname, DateTime? lastConnected);
     public record CreateUserDTO(string username, string password);
-
     public record UpdateNicknameDTO(string nickname);
+    public record DeleteUserDTO(string username, string password);
 }

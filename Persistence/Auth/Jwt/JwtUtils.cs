@@ -9,9 +9,9 @@ namespace Auth.Jwt
     {
         const string SECRET_KEY = "unity_bootcamp_14_aslkfjlkadnvfkdfjnlaksdfnakjfd";
         readonly static byte[] KEY_BYTES = Encoding.UTF8.GetBytes(SECRET_KEY);
-        readonly static SymmetricSecurityKey SYM_KEY = new SymmetricSecurityKey(KEY_BYTES); // 대칭키
-        const string ISSUER = "AuthServer";
-        const string AUDIENCE = "GameClient";
+        public readonly static SymmetricSecurityKey SYM_KEY = new SymmetricSecurityKey(KEY_BYTES); // 대칭키
+        public const string ISSUER = "AuthServer";
+        public const string AUDIENCE = "GameClient";
 
         /// <summary>
         /// 토큰 생성
