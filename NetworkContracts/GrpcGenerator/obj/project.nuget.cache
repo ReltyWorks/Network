@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ebwXR8OdZWQ=",
+  "dgSpecHash": "n4HjBGmGlAQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Network\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\MultiplayGame\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\google.protobuf\\3.33.2\\google.protobuf.3.33.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\grpc.tools\\2.76.0\\grpc.tools.2.76.0.nupkg.sha512"

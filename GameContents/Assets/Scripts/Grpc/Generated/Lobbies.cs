@@ -42,7 +42,7 @@ namespace Game.Lobbies {
             "YnlSZXF1ZXN0Eg8KB3VzZXJfaWQYASABKAkSEAoIbG9iYnlfaWQYAiABKAUi",
             "zgIKCkxvYmJ5RXZlbnQSMAoEdHlwZRgBIAEoDjIiLmdhbWUubG9iYmllcy5M",
             "b2JieUV2ZW50LkV2ZW50VHlwZRIQCghsb2JieV9pZBgCIAEoBRIPCgd1c2Vy",
-            "X2lkGAMgASgFEiwKAmt2GAQgAygLMiAuZ2FtZS5sb2JiaWVzLkxvYmJ5RXZl",
+            "X2lkGAMgASgJEiwKAmt2GAQgAygLMiAuZ2FtZS5sb2JiaWVzLkxvYmJ5RXZl",
             "bnQuS3ZFbnRyeRImCgJ0cxgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
             "c3RhbXAaKQoHS3ZFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6",
             "AjgBImoKCUV2ZW50VHlwZRIPCgtNRU1CRVJfSk9JThAAEg8KC01FTUJFUl9M",
@@ -57,30 +57,30 @@ namespace Game.Lobbies {
             "YmJpZXMuU2V0VXNlckN1c3RvbVByb3BlcnRpZXNSZXF1ZXN0Lkt2RW50cnka",
             "KQoHS3ZFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIjIK",
             "H1NldFVzZXJDdXN0b21Qcm9wZXJ0aWVzUmVzcG9uc2USDwoHc3VjY2VzcxgB",
-            "IAEoCCLiAQoJTG9iYnlJbmZvEhAKCGxvYmJ5X2lkGAEgASgFEhgKEG1hc3Rl",
-            "cl9jbGllbnRfaWQYAiABKAUSEgoKbWF4X2NsaWVudBgDIAEoBRISCgpudW1f",
-            "Y2xpZW50GAQgASgFEkgKEWN1c3RvbV9wcm9wZXJ0aWVzGAUgAygLMi0uZ2Ft",
-            "ZS5sb2JiaWVzLkxvYmJ5SW5mby5DdXN0b21Qcm9wZXJ0aWVzRW50cnkaNwoV",
-            "Q3VzdG9tUHJvcGVydGllc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgC",
-            "IAEoCToCOAEirQEKD1VzZXJJbkxvYmJ5SW5mbxIRCgljbGllbnRfaWQYASAB",
-            "KAUSTgoRY3VzdG9tX3Byb3BlcnRpZXMYAiADKAsyMy5nYW1lLmxvYmJpZXMu",
-            "VXNlckluTG9iYnlJbmZvLkN1c3RvbVByb3BlcnRpZXNFbnRyeRo3ChVDdXN0",
-            "b21Qcm9wZXJ0aWVzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJ",
-            "OgI4ATKGBQoOTG9iYmllc1NlcnZpY2USUgoLQ3JlYXRlTG9iYnkSIC5nYW1l",
-            "LmxvYmJpZXMuQ3JlYXRlTG9iYnlSZXF1ZXN0GiEuZ2FtZS5sb2JiaWVzLkNy",
-            "ZWF0ZUxvYmJ5UmVzcG9uc2USTAoJSm9pbkxvYmJ5Eh4uZ2FtZS5sb2JiaWVz",
-            "LkpvaW5Mb2JieVJlcXVlc3QaHy5nYW1lLmxvYmJpZXMuSm9pbkxvYmJ5UmVz",
-            "cG9uc2USTwoKTGVhdmVMb2JieRIfLmdhbWUubG9iYmllcy5MZWF2ZUxvYmJ5",
-            "UmVxdWVzdBogLmdhbWUubG9iYmllcy5MZWF2ZUxvYmJ5UmVzcG9uc2USSgoM",
-            "R2V0TG9iYnlMaXN0EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiIuZ2FtZS5s",
-            "b2JiaWVzLkdldExvYmJ5TGlzdFJlc3BvbnNlElEKDlN1YnNjcmliZUxvYmJ5",
-            "EiMuZ2FtZS5sb2JiaWVzLlN1YnNjcmliZUxvYmJ5UmVxdWVzdBoYLmdhbWUu",
-            "bG9iYmllcy5Mb2JieUV2ZW50MAESagoTU2V0Q3VzdG9tUHJvcGVydGllcxIo",
-            "LmdhbWUubG9iYmllcy5TZXRDdXN0b21Qcm9wZXJ0aWVzUmVxdWVzdBopLmdh",
-            "bWUubG9iYmllcy5TZXRDdXN0b21Qcm9wZXJ0aWVzUmVzcG9uc2USdgoXU2V0",
-            "VXNlckN1c3RvbVByb3BlcnRpZXMSLC5nYW1lLmxvYmJpZXMuU2V0VXNlckN1",
-            "c3RvbVByb3BlcnRpZXNSZXF1ZXN0Gi0uZ2FtZS5sb2JiaWVzLlNldFVzZXJD",
-            "dXN0b21Qcm9wZXJ0aWVzUmVzcG9uc2ViBnByb3RvMw=="));
+            "IAEoCCLgAQoJTG9iYnlJbmZvEhAKCGxvYmJ5X2lkGAEgASgFEhYKDm1hc3Rl",
+            "cl91c2VyX2lkGAIgASgJEhIKCm1heF9jbGllbnQYAyABKAUSEgoKbnVtX2Ns",
+            "aWVudBgEIAEoBRJIChFjdXN0b21fcHJvcGVydGllcxgFIAMoCzItLmdhbWUu",
+            "bG9iYmllcy5Mb2JieUluZm8uQ3VzdG9tUHJvcGVydGllc0VudHJ5GjcKFUN1",
+            "c3RvbVByb3BlcnRpZXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiAB",
+            "KAk6AjgBIqsBCg9Vc2VySW5Mb2JieUluZm8SDwoHdXNlcl9pZBgBIAEoCRJO",
+            "ChFjdXN0b21fcHJvcGVydGllcxgCIAMoCzIzLmdhbWUubG9iYmllcy5Vc2Vy",
+            "SW5Mb2JieUluZm8uQ3VzdG9tUHJvcGVydGllc0VudHJ5GjcKFUN1c3RvbVBy",
+            "b3BlcnRpZXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgB",
+            "MoYFCg5Mb2JiaWVzU2VydmljZRJSCgtDcmVhdGVMb2JieRIgLmdhbWUubG9i",
+            "Ymllcy5DcmVhdGVMb2JieVJlcXVlc3QaIS5nYW1lLmxvYmJpZXMuQ3JlYXRl",
+            "TG9iYnlSZXNwb25zZRJMCglKb2luTG9iYnkSHi5nYW1lLmxvYmJpZXMuSm9p",
+            "bkxvYmJ5UmVxdWVzdBofLmdhbWUubG9iYmllcy5Kb2luTG9iYnlSZXNwb25z",
+            "ZRJPCgpMZWF2ZUxvYmJ5Eh8uZ2FtZS5sb2JiaWVzLkxlYXZlTG9iYnlSZXF1",
+            "ZXN0GiAuZ2FtZS5sb2JiaWVzLkxlYXZlTG9iYnlSZXNwb25zZRJKCgxHZXRM",
+            "b2JieUxpc3QSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaIi5nYW1lLmxvYmJp",
+            "ZXMuR2V0TG9iYnlMaXN0UmVzcG9uc2USUQoOU3Vic2NyaWJlTG9iYnkSIy5n",
+            "YW1lLmxvYmJpZXMuU3Vic2NyaWJlTG9iYnlSZXF1ZXN0GhguZ2FtZS5sb2Ji",
+            "aWVzLkxvYmJ5RXZlbnQwARJqChNTZXRDdXN0b21Qcm9wZXJ0aWVzEiguZ2Ft",
+            "ZS5sb2JiaWVzLlNldEN1c3RvbVByb3BlcnRpZXNSZXF1ZXN0GikuZ2FtZS5s",
+            "b2JiaWVzLlNldEN1c3RvbVByb3BlcnRpZXNSZXNwb25zZRJ2ChdTZXRVc2Vy",
+            "Q3VzdG9tUHJvcGVydGllcxIsLmdhbWUubG9iYmllcy5TZXRVc2VyQ3VzdG9t",
+            "UHJvcGVydGllc1JlcXVlc3QaLS5nYW1lLmxvYmJpZXMuU2V0VXNlckN1c3Rv",
+            "bVByb3BlcnRpZXNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -97,8 +97,8 @@ namespace Game.Lobbies {
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.SetCustomPropertiesResponse), global::Game.Lobbies.SetCustomPropertiesResponse.Parser, new[]{ "Success" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.SetUserCustomPropertiesRequest), global::Game.Lobbies.SetUserCustomPropertiesRequest.Parser, new[]{ "LobbyId", "UserId", "Kv" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.SetUserCustomPropertiesResponse), global::Game.Lobbies.SetUserCustomPropertiesResponse.Parser, new[]{ "Success" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.LobbyInfo), global::Game.Lobbies.LobbyInfo.Parser, new[]{ "LobbyId", "MasterClientId", "MaxClient", "NumClient", "CustomProperties" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.UserInLobbyInfo), global::Game.Lobbies.UserInLobbyInfo.Parser, new[]{ "ClientId", "CustomProperties" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.LobbyInfo), global::Game.Lobbies.LobbyInfo.Parser, new[]{ "LobbyId", "MasterUserId", "MaxClient", "NumClient", "CustomProperties" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Game.Lobbies.UserInLobbyInfo), global::Game.Lobbies.UserInLobbyInfo.Parser, new[]{ "UserId", "CustomProperties" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -155,7 +155,7 @@ namespace Game.Lobbies {
     public const int UserIdFieldNumber = 1;
     private string userId_ = "";
     /// <summary>
-    /// Guid
+    /// Client Guid
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -957,7 +957,7 @@ namespace Game.Lobbies {
         = pb::FieldCodec.ForMessage(26, global::Game.Lobbies.UserInLobbyInfo.Parser);
     private readonly pbc::RepeatedField<global::Game.Lobbies.UserInLobbyInfo> userInLobbyInfos_ = new pbc::RepeatedField<global::Game.Lobbies.UserInLobbyInfo>();
     /// <summary>
-    /// 참여한 로비의 유저정보
+    /// 참여한 로비에 있는 클라이언트들 정보
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2086,16 +2086,16 @@ namespace Game.Lobbies {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 3;
-    private int userId_;
+    private string userId_ = "";
     /// <summary>
     /// 이벤트가 발생한 유저
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int UserId {
+    public string UserId {
       get { return userId_; }
       set {
-        userId_ = value;
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2117,7 +2117,7 @@ namespace Game.Lobbies {
     public const int TsFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp ts_;
     /// <summary>
-    /// 이벤트가 발생한 시간
+    /// 이벤트 발행 시간
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2157,7 +2157,7 @@ namespace Game.Lobbies {
       int hash = 1;
       if (Type != global::Game.Lobbies.LobbyEvent.Types.EventType.MemberJoin) hash ^= Type.GetHashCode();
       if (LobbyId != 0) hash ^= LobbyId.GetHashCode();
-      if (UserId != 0) hash ^= UserId.GetHashCode();
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
       hash ^= Kv.GetHashCode();
       if (ts_ != null) hash ^= Ts.GetHashCode();
       if (_unknownFields != null) {
@@ -2186,9 +2186,9 @@ namespace Game.Lobbies {
         output.WriteRawTag(16);
         output.WriteInt32(LobbyId);
       }
-      if (UserId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(UserId);
+      if (UserId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(UserId);
       }
       kv_.WriteTo(output, _map_kv_codec);
       if (ts_ != null) {
@@ -2213,9 +2213,9 @@ namespace Game.Lobbies {
         output.WriteRawTag(16);
         output.WriteInt32(LobbyId);
       }
-      if (UserId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(UserId);
+      if (UserId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(UserId);
       }
       kv_.WriteTo(ref output, _map_kv_codec);
       if (ts_ != null) {
@@ -2238,8 +2238,8 @@ namespace Game.Lobbies {
       if (LobbyId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LobbyId);
       }
-      if (UserId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
       }
       size += kv_.CalculateSize(_map_kv_codec);
       if (ts_ != null) {
@@ -2263,7 +2263,7 @@ namespace Game.Lobbies {
       if (other.LobbyId != 0) {
         LobbyId = other.LobbyId;
       }
-      if (other.UserId != 0) {
+      if (other.UserId.Length != 0) {
         UserId = other.UserId;
       }
       kv_.MergeFrom(other.kv_);
@@ -2300,8 +2300,8 @@ namespace Game.Lobbies {
             LobbyId = input.ReadInt32();
             break;
           }
-          case 24: {
-            UserId = input.ReadInt32();
+          case 26: {
+            UserId = input.ReadString();
             break;
           }
           case 34: {
@@ -2342,8 +2342,8 @@ namespace Game.Lobbies {
             LobbyId = input.ReadInt32();
             break;
           }
-          case 24: {
-            UserId = input.ReadInt32();
+          case 26: {
+            UserId = input.ReadString();
             break;
           }
           case 34: {
@@ -2381,7 +2381,7 @@ namespace Game.Lobbies {
         /// </summary>
         [pbr::OriginalName("LOBBY_CUSTOM_PROP_CHANGED")] LobbyCustomPropChanged = 2,
         /// <summary>
-        /// 현재 로비의 어떤 클라이언트의 사용자지정 설정이 바뀜
+        /// 현재로비의 어떤 클라이언트의 사용자지정 설정이 바뀜
         /// </summary>
         [pbr::OriginalName("USER_CUSTOM_PROP_CHANGED")] UserCustomPropChanged = 3,
       }
@@ -2458,7 +2458,7 @@ namespace Game.Lobbies {
         = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 18);
     private readonly pbc::MapField<string, string> kv_ = new pbc::MapField<string, string>();
     /// <summary>
-    /// 어떤 사용자지정 설정을 할 것인지
+    /// 어떤 사용자지정 설정을 할것인지
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2902,7 +2902,7 @@ namespace Game.Lobbies {
         = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 26);
     private readonly pbc::MapField<string, string> kv_ = new pbc::MapField<string, string>();
     /// <summary>
-    /// 어떤 사용자지정 설정을 할 것인지
+    /// 어떤 사용자지정 설정을 할것인지
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3323,7 +3323,7 @@ namespace Game.Lobbies {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LobbyInfo(LobbyInfo other) : this() {
       lobbyId_ = other.lobbyId_;
-      masterClientId_ = other.masterClientId_;
+      masterUserId_ = other.masterUserId_;
       maxClient_ = other.maxClient_;
       numClient_ = other.numClient_;
       customProperties_ = other.customProperties_.Clone();
@@ -3348,18 +3348,18 @@ namespace Game.Lobbies {
       }
     }
 
-    /// <summary>Field number for the "master_client_id" field.</summary>
-    public const int MasterClientIdFieldNumber = 2;
-    private int masterClientId_;
+    /// <summary>Field number for the "master_user_id" field.</summary>
+    public const int MasterUserIdFieldNumber = 2;
+    private string masterUserId_ = "";
     /// <summary>
     /// 방장 client id
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MasterClientId {
-      get { return masterClientId_; }
+    public string MasterUserId {
+      get { return masterUserId_; }
       set {
-        masterClientId_ = value;
+        masterUserId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -3420,7 +3420,7 @@ namespace Game.Lobbies {
         return true;
       }
       if (LobbyId != other.LobbyId) return false;
-      if (MasterClientId != other.MasterClientId) return false;
+      if (MasterUserId != other.MasterUserId) return false;
       if (MaxClient != other.MaxClient) return false;
       if (NumClient != other.NumClient) return false;
       if (!CustomProperties.Equals(other.CustomProperties)) return false;
@@ -3432,7 +3432,7 @@ namespace Game.Lobbies {
     public override int GetHashCode() {
       int hash = 1;
       if (LobbyId != 0) hash ^= LobbyId.GetHashCode();
-      if (MasterClientId != 0) hash ^= MasterClientId.GetHashCode();
+      if (MasterUserId.Length != 0) hash ^= MasterUserId.GetHashCode();
       if (MaxClient != 0) hash ^= MaxClient.GetHashCode();
       if (NumClient != 0) hash ^= NumClient.GetHashCode();
       hash ^= CustomProperties.GetHashCode();
@@ -3458,9 +3458,9 @@ namespace Game.Lobbies {
         output.WriteRawTag(8);
         output.WriteInt32(LobbyId);
       }
-      if (MasterClientId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MasterClientId);
+      if (MasterUserId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MasterUserId);
       }
       if (MaxClient != 0) {
         output.WriteRawTag(24);
@@ -3485,9 +3485,9 @@ namespace Game.Lobbies {
         output.WriteRawTag(8);
         output.WriteInt32(LobbyId);
       }
-      if (MasterClientId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MasterClientId);
+      if (MasterUserId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MasterUserId);
       }
       if (MaxClient != 0) {
         output.WriteRawTag(24);
@@ -3511,8 +3511,8 @@ namespace Game.Lobbies {
       if (LobbyId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LobbyId);
       }
-      if (MasterClientId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MasterClientId);
+      if (MasterUserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MasterUserId);
       }
       if (MaxClient != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxClient);
@@ -3536,8 +3536,8 @@ namespace Game.Lobbies {
       if (other.LobbyId != 0) {
         LobbyId = other.LobbyId;
       }
-      if (other.MasterClientId != 0) {
-        MasterClientId = other.MasterClientId;
+      if (other.MasterUserId.Length != 0) {
+        MasterUserId = other.MasterUserId;
       }
       if (other.MaxClient != 0) {
         MaxClient = other.MaxClient;
@@ -3569,8 +3569,8 @@ namespace Game.Lobbies {
             LobbyId = input.ReadInt32();
             break;
           }
-          case 16: {
-            MasterClientId = input.ReadInt32();
+          case 18: {
+            MasterUserId = input.ReadString();
             break;
           }
           case 24: {
@@ -3608,8 +3608,8 @@ namespace Game.Lobbies {
             LobbyId = input.ReadInt32();
             break;
           }
-          case 16: {
-            MasterClientId = input.ReadInt32();
+          case 18: {
+            MasterUserId = input.ReadString();
             break;
           }
           case 24: {
@@ -3666,7 +3666,7 @@ namespace Game.Lobbies {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserInLobbyInfo(UserInLobbyInfo other) : this() {
-      clientId_ = other.clientId_;
+      userId_ = other.userId_;
       customProperties_ = other.customProperties_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3677,15 +3677,15 @@ namespace Game.Lobbies {
       return new UserInLobbyInfo(this);
     }
 
-    /// <summary>Field number for the "client_id" field.</summary>
-    public const int ClientIdFieldNumber = 1;
-    private int clientId_;
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 1;
+    private string userId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ClientId {
-      get { return clientId_; }
+    public string UserId {
+      get { return userId_; }
       set {
-        clientId_ = value;
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -3715,7 +3715,7 @@ namespace Game.Lobbies {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ClientId != other.ClientId) return false;
+      if (UserId != other.UserId) return false;
       if (!CustomProperties.Equals(other.CustomProperties)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3724,7 +3724,7 @@ namespace Game.Lobbies {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (ClientId != 0) hash ^= ClientId.GetHashCode();
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
       hash ^= CustomProperties.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3744,9 +3744,9 @@ namespace Game.Lobbies {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ClientId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ClientId);
+      if (UserId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserId);
       }
       customProperties_.WriteTo(output, _map_customProperties_codec);
       if (_unknownFields != null) {
@@ -3759,9 +3759,9 @@ namespace Game.Lobbies {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ClientId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ClientId);
+      if (UserId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserId);
       }
       customProperties_.WriteTo(ref output, _map_customProperties_codec);
       if (_unknownFields != null) {
@@ -3774,8 +3774,8 @@ namespace Game.Lobbies {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (ClientId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClientId);
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
       }
       size += customProperties_.CalculateSize(_map_customProperties_codec);
       if (_unknownFields != null) {
@@ -3790,8 +3790,8 @@ namespace Game.Lobbies {
       if (other == null) {
         return;
       }
-      if (other.ClientId != 0) {
-        ClientId = other.ClientId;
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
       }
       customProperties_.MergeFrom(other.customProperties_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3813,8 +3813,8 @@ namespace Game.Lobbies {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ClientId = input.ReadInt32();
+          case 10: {
+            UserId = input.ReadString();
             break;
           }
           case 18: {
@@ -3840,8 +3840,8 @@ namespace Game.Lobbies {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            ClientId = input.ReadInt32();
+          case 10: {
+            UserId = input.ReadString();
             break;
           }
           case 18: {

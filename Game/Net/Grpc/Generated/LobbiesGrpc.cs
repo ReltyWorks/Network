@@ -189,7 +189,7 @@ namespace Game.Lobbies {
       }
 
       /// <summary>
-      /// 로비 구독
+      /// 로비 구독 (server-스트리밍.. 로비 변동사항들을 서버가 보내주면 클라이언트가 계속해서 받아 처리)
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>

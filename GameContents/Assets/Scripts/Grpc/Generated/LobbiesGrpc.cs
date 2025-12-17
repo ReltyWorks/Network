@@ -356,7 +356,7 @@ namespace Game.Lobbies {
         return CallInvoker.AsyncUnaryCall(__Method_GetLobbyList, null, options, request);
       }
       /// <summary>
-      /// 로비 구독
+      /// 로비 구독 (server-스트리밍.. 로비 변동사항들을 서버가 보내주면 클라이언트가 계속해서 받아 처리)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -369,7 +369,7 @@ namespace Game.Lobbies {
         return SubscribeLobby(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// 로비 구독
+      /// 로비 구독 (server-스트리밍.. 로비 변동사항들을 서버가 보내주면 클라이언트가 계속해서 받아 처리)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
