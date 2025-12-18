@@ -1,4 +1,5 @@
 ﻿using Game.Lobbies;
+using Google.Protobuf.Collections;
 using Grpc.Core;
 using Net.Utils;
 using System.Collections.Concurrent;
@@ -121,6 +122,11 @@ namespace Net.Lobbies
                 return;
 
             lobby.Broadcast(e);
+        }
+
+        public RepeatedField<LobbyInfo> GetLobbyInfos()
+        {
+            return new RepeatedField<LobbyInfo> { _lobbies.Values.Select(lobby => lobby.ToLobbyInfo()) };
         }
     }
 }

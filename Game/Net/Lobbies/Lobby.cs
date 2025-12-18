@@ -10,6 +10,17 @@ namespace Net.Lobbies
     {
         public int Id { get; init; }
         public int MaxUser { get; set; }
+        public int NumUser
+        {
+            get
+            {
+                lock (_gate)
+                {
+                    return _members.Count;
+                }
+            }
+        }
+
         public string MasterUserId { get; set; }
 
         private HashSet<string> _members { get; } = new();

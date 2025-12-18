@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
+using NetworkStatus;
 
 namespace Game.Net.Auth
 {
@@ -57,6 +58,7 @@ namespace Game.Net.Auth
                         var response = JsonUtility.FromJson<LoginResponse>(request.downloadHandler.text);
                         _jwt = response.Jwt;
                         _guid = response.Guid;
+                        NetworkBlackboard.userId = _guid.ToString();
                         success = true;
                         _view.ShowAlertPanel("Logged In !");
                     }
