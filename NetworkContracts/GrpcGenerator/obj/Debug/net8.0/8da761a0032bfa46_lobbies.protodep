@@ -1,0 +1,4 @@
+..\..\GameContents\Assets\Scripts\Grpc\Generated/Lobbies.cs \
+..\..\GameContents\Assets\Scripts\Grpc\Generated/LobbiesGrpc.cs: C:/Users/user/.nuget/packages/grpc.tools/2.76.0/build/native/include/google/protobuf/timestamp.proto\
+ C:/Users/user/.nuget/packages/grpc.tools/2.76.0/build/native/include/google/protobuf/empty.proto\
+ ../Protos/lobbies.proto

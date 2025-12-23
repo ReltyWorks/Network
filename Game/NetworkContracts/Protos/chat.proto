@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package game.chat;
+
+import "google/protobuf/timestamp.proto";
+
+// 고객이 서버에게 제공받을 수 있는 비즈니스
+service ChatService{
+	// rpc (Remote Procedure Call) : 원격함수호출 (고객이 서버의 함수를 호출하거나 서버가 고객의 함수를 호출)
+	// gRPC 는 비즈니스 로직 단위 (고객이 어떤 요청을하면 어떤응답을 줄것인가 에 대한 단위) 를 작성하기위해 rpc 활용
+	rpc Chat(stream ChatMessage) returns (stream ChatMessage); // 양방향 스트리밍 rpc
+	rpc GetChatHistory(GetChatHistoryRequest) returns (GetChatHistoryResponse);
+}
+
+// message : 고객과 서버가 주고받을수있는 대화 형식
+message ChatMessage{
+	int32 sender_id = 1;
+	int32 receiver_id = 2;
+	string content = 3;
+	google.protobuf.Timestamp timestamp = 4;
+
+	enum MessageType{
+		NORMAL = 0;
+		SYSTEM = 1;
+		WHISPER = 2;
+	}
+}
+
+message GetChatHistoryRequest {
+	int32 limit = 1;
+	google.protobuf.Timestamp since = 2;
+}
+
+message GetChatHistoryResponse {
+	repeated ChatMessage history = 1; // repeated : 0 ~ N 개의 필드를 포함할수있음
+}

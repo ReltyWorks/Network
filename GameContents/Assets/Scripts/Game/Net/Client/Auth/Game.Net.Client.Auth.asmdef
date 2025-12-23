@@ -1,0 +1,17 @@
+{
+    "name": "Game.Net.Client.Auth",
+    "rootNamespace": "",
+    "references": [
+        "Unity.TextMeshPro",
+        "NetworkStatus"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
