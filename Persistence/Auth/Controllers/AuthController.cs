@@ -32,7 +32,8 @@ namespace Auth.Controllers
             Guid sessionId = Guid.NewGuid();
             _loginSessions.Add(sessionId, user);
             var jwt = JwtUtils.Generate(user.Id.ToString(), sessionId.ToString(), TimeSpan.FromHours(1));
-            return Ok(new { jwt, user.Id, user.Nickname });
+            string userId = user.Id.ToString();
+            return Ok(new { jwt, userId, user.Nickname });
         }
 
         [HttpPost("logout")]

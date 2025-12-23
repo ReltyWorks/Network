@@ -8,7 +8,7 @@ namespace Net.Lobbies
 {
     public class LobbiesManager
     {
-        private IdGenerator _idGenerator;
+        private IdGenerator _idGenerator = new IdGenerator();
         readonly ConcurrentDictionary<int, Lobby> _lobbies = new();
 
         /// <summary>
