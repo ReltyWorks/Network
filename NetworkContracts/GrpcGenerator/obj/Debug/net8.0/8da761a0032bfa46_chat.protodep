@@ -1,0 +1,3 @@
+..\..\GameContents\Assets\Scripts\Grpc\Generated/Chat.cs \
+..\..\GameContents\Assets\Scripts\Grpc\Generated/ChatGrpc.cs: C:/Users/user/.nuget/packages/grpc.tools/2.76.0/build/native/include/google/protobuf/timestamp.proto\
+ ../Protos/chat.proto
