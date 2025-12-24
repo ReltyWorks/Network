@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\MultiplayGame\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\Network\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\MultiplayGame\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\Network\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MultiplayGame\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Network\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj",
         "projectName": "GrpcGenerator",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MultiplayGame\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\NetworkContracts\\GrpcGenerator\\GrpcGenerator.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MultiplayGame\\NetworkContracts\\GrpcGenerator\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Network\\NetworkContracts\\GrpcGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
