@@ -1,0 +1,12 @@
+﻿<Solution>
+  <Project Path="NetworkStatus.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Game.Net.Client.Chat.csproj" />
+  <Project Path="Game.Net.Client.InGame.csproj" />
+  <Project Path="Game.Net.Shared.csproj" />
+  <Project Path="Grpc.csproj" />
+  <Project Path="Game.Net.Client.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Game.Net.Client.Auth.csproj" />
+  <Project Path="Game.Net.Client.Lobbies.csproj" />
+</Solution>
